@@ -40,6 +40,10 @@ public class Sample_Code
         int_pos[2]++;
         return int_pos;
     }
+    public String turnright()
+    {
+        return int_dir;
+    }
 public static void main(String args[])
 {
    
