@@ -66,14 +66,28 @@ public class Sample_Code
     }
     public String upward()
     {
-        return "U";
+        int_dir="U";
+        return int_dir;
     }
     public String downward()
     {
-        return "D";
+        int_dir="D";
+        return int_dir;
     }
     public int[] sample_position(char commands[])
     {
+        for(int i=0;i<commands.length;i++)
+        {
+            switch(commands[i])
+            {
+                case 'f':moveforward();break;
+                case 'b':movebackward();break;
+                case 'l':turnleft();break;
+                case 'r':turnright();break;
+                case 'u':upward();break;
+                default:downward();
+            }
+        }
          return int_pos;
     }
     public String sample_direction()
