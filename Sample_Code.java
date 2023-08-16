@@ -54,6 +54,8 @@ public class Sample_Code
     }
     public String turnleft()
     {
+        if(int_dir=="W")
+        int_dir="S";
         return int_dir;
     }
 public static void main(String args[])
