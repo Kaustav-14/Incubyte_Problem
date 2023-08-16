@@ -42,6 +42,8 @@ public class Sample_Code
     }
     public String turnright()
     {
+        if(int_dir=="N")
+        int_dir="E";
         return int_dir;
     }
 public static void main(String args[])
