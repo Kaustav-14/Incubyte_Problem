@@ -52,6 +52,10 @@ public class Sample_Code
         int_dir="N";
         return int_dir;
     }
+    public String turnleft()
+    {
+        return int_dir;
+    }
 public static void main(String args[])
 {
    
