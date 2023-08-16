@@ -40,5 +40,11 @@ public class Test_Suit
     {
        assertEquals("D", new Sample_Code(input, "N").downward());  
     }
-
+    @Test
+    void sample_pos_test()
+    {
+        char sample[]={'f','r','u','b','l'};
+        Sample_Code sc=new Sample_Code(input, "N");
+        assertEquals(new int[]{0,1,-1}, sc.sample_position(sample));
+    }
 }

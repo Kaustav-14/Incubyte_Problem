@@ -18,7 +18,7 @@ public class Sample_Code
         int_pos[0]++;
         else if(int_dir=="W")
         int_pos[0]--;
-        else if(int_dir=="Up")
+        else if(int_dir=="U")
         int_pos[2]++;
         else
         int_pos[2]--;
@@ -34,7 +34,7 @@ public class Sample_Code
         int_pos[0]--;
         else if(int_dir=="W")
         int_pos[0]++;
-        else if(int_dir=="Up")
+        else if(int_dir=="U")
         int_pos[2]--;
         else
         int_pos[2]++;
@@ -71,6 +71,14 @@ public class Sample_Code
     public String downward()
     {
         return "D";
+    }
+    public int[] sample_position(char commands[])
+    {
+         return int_pos;
+    }
+    public String sample_direction()
+    {
+
     }
 public static void main(String args[])
 {
