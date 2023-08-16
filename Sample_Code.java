@@ -64,6 +64,10 @@ public class Sample_Code
         int_dir="W";
         return int_dir;
     }
+    public String upward()
+    {
+        return "U";
+    }
 public static void main(String args[])
 {
    

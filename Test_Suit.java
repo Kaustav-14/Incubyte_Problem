@@ -30,5 +30,10 @@ public class Test_Suit
         assertEquals("W", sc.turnleft());
 
     }
+    @Test
+    void testupward()
+    {
+        assertEquals("U", new Sample_Code(input, "N").upward());
+    }
 
 }
