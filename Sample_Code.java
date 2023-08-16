@@ -34,6 +34,10 @@ public class Sample_Code
         int_pos[0]--;
         else if(int_dir=="W")
         int_pos[0]++;
+        else if(int_dir=="Up")
+        int_pos[2]--;
+        else
+        int_pos[2]++;
         return int_pos;
     }
 public static void main(String args[])
