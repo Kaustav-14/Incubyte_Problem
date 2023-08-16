@@ -52,7 +52,7 @@ public class Test_Suit
     {
        char sample[]={'f','r','u','b','l'};
         Sample_Code sc=new Sample_Code(input, "N");
-        int ouput[]=sc.sample_position(sample);
+        sc.sample_position(sample);
         assertEquals("N",sc.sample_direction()); 
     }
 }

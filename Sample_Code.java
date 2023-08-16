@@ -1,5 +1,6 @@
 public class Sample_Code
 {
+    String actual_dir;
     int int_pos[]=new int[3];
     String int_dir;
     public Sample_Code(int input_pos[], String input_dir)
@@ -66,11 +67,13 @@ public class Sample_Code
     }
     public String upward()
     {
+        actual_dir=int_dir;
         int_dir="U";
         return int_dir;
     }
     public String downward()
     {
+        actual_dir=int_dir;
         int_dir="D";
         return int_dir;
     }
@@ -82,8 +85,14 @@ public class Sample_Code
             {
                 case 'f':moveforward();break;
                 case 'b':movebackward();break;
-                case 'l':turnleft();break;
-                case 'r':turnright();break;
+                case 'l':if(int_dir=="U"||int_dir=="D")
+                         int_dir=actual_dir;
+                         turnleft();
+                         break;
+                case 'r':if(int_dir=="U"||int_dir=="D")
+                         int_dir=actual_dir;
+                         turnright();
+                         break;
                 case 'u':upward();break;
                 default:downward();
             }
