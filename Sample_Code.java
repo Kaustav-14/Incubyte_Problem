@@ -26,6 +26,8 @@ public class Sample_Code
     }
     public int[] movebackward()
     {
+        if(int_dir=="N")
+        int_pos[1]--;
         return int_pos;
     }
 public static void main(String args[])
