@@ -13,8 +13,8 @@ public class Test_Suit
     @Test
     void testmovebackward()
     {
-        Sample_Code sc=new Sample_Code(input, "N");
-        assertArrayEquals(new int[]{0,-1,0}, sc.movebackward()); 
+        Sample_Code sc=new Sample_Code(input, "S");
+        assertArrayEquals(new int[]{0,1,0}, sc.movebackward()); 
     }
 
 }
