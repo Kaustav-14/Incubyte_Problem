@@ -6,8 +6,8 @@ public class Test_Suit
     void testmoveforward()
     {
         int input[]={0,0,0};
-        Sample_Code sc=new Sample_Code(input,"E");
-        assertArrayEquals(new int[]{1,0,0}, sc.moveforward());
+        Sample_Code sc=new Sample_Code(input,"W");
+        assertArrayEquals(new int[]{-1,0,0}, sc.moveforward());
 
     }
 
