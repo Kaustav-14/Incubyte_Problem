@@ -26,8 +26,8 @@ public class Test_Suit
     @Test
     void testturnleft()
     {
-        Sample_Code sc=new Sample_Code(input, "S");
-        assertEquals("E", sc.turnleft());
+        Sample_Code sc=new Sample_Code(input, "N");
+        assertEquals("W", sc.turnleft());
 
     }
 

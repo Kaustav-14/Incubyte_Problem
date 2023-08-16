@@ -58,6 +58,10 @@ public class Sample_Code
         int_dir="S";
         else if(int_dir=="S")
         int_dir="E";
+        else if(int_dir=="E")
+        int_dir="N";
+        else
+        int_dir="W";
         return int_dir;
     }
 public static void main(String args[])
