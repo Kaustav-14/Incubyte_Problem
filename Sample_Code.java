@@ -68,6 +68,10 @@ public class Sample_Code
     {
         return "U";
     }
+    public String downward()
+    {
+        return "D";
+    }
 public static void main(String args[])
 {
    

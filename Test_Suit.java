@@ -35,5 +35,10 @@ public class Test_Suit
     {
         assertEquals("U", new Sample_Code(input, "N").upward());
     }
+    @Test
+    void testdownward()
+    {
+       assertEquals("D", new Sample_Code(input, "N").downward());  
+    }
 
 }
