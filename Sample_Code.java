@@ -44,6 +44,8 @@ public class Sample_Code
     {
         if(int_dir=="N")
         int_dir="E";
+        if(int_dir=="E")
+        int_dir="S";
         return int_dir;
     }
 public static void main(String args[])
