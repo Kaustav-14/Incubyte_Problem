@@ -24,6 +24,10 @@ public class Sample_Code
         int_pos[2]--;
         return int_pos;
     }
+    public int[] movebackward()
+    {
+        return int_pos;
+    }
 public static void main(String args[])
 {
    
