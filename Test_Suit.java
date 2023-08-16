@@ -19,8 +19,8 @@ public class Test_Suit
     @Test
     void testturnright()
     {
-        Sample_Code sc=new Sample_Code(input, "E");
-        assertEquals("S", sc.turnright());
+        Sample_Code sc=new Sample_Code(input, "W");
+        assertEquals("N", sc.turnright());
          
     }
 
