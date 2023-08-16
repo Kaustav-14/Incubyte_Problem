@@ -30,6 +30,8 @@ public class Sample_Code
         int_pos[1]--;
         else if(int_dir=="S")
         int_pos[1]++;
+        else if(int_dir=="E")
+        int_pos[0]--;
         return int_pos;
     }
 public static void main(String args[])
