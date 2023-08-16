@@ -92,7 +92,7 @@ public class Sample_Code
     }
     public String sample_direction()
     {
-
+        return int_dir;
     }
 public static void main(String args[])
 {
