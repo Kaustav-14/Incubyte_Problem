@@ -7,7 +7,9 @@ public class Test_Suit
     void testmoveforward()
     {
         Sample_Code sc=new Sample_Code(input,"N");
+
         assertArrayEquals(new int[]{0,1,0}, sc.moveforward());
+        
 
     }
     @Test

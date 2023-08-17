@@ -14,16 +14,16 @@ public class Sample_Code
     {
         if(int_dir.equals("N"))
         int_pos[1]++;
-        else if(int_dir.equals("S"))
-        int_pos[1]--;
         else if(int_dir.equals("E"))
         int_pos[0]++;
-        else if(int_dir.equals("W"))
-        int_pos[0]--;
         else if(int_dir.equals("U"))
         int_pos[2]++;
-        else
+        else if(int_dir.equals("S"))
+        int_pos[1]--;
+        else if(int_dir.equals("W"))
         int_pos[2]--;
+        else
+        int_pos[0]--;
         return int_pos;
     }
     public int[] movebackward()
