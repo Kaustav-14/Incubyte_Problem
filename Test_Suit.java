@@ -1,8 +1,27 @@
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+class position
+{
+    int x,y,z;
+    position(int a, int b, int c)
+    {
+        x=a;
+        y=b;
+        z=c;
+    }
+
+}
 public class Test_Suit
 {
-    int input[]={0,0,0};
+    position input;
+    @BeforeEach
+    public void original_pos()
+    {
+         
+          input=new position(0, 0, 0);
+    }
     @Test
     void testmoveforward()
     {

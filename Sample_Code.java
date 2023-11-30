@@ -4,10 +4,11 @@ public class Sample_Code
     String actual_dir;
     int int_pos[]=new int[3];
     String int_dir;
-    public Sample_Code(int input_pos[], String input_dir)
+    public Sample_Code(position input_pos, String input_dir)
     {
-        for(int i=0;i<3;i++)
-        int_pos[i]=input_pos[i];
+        int_pos[0]=input_pos.x;
+        int_pos[1]=input_pos.y;
+        int_pos[2]=input_pos.z;
         int_dir=input_dir;
     }
     public int[] moveforward()
@@ -110,12 +111,12 @@ public class Sample_Code
         Scanner s=new Scanner(System.in);
         System.out.println("Enter initial direction");
         String int_dir=s.nextLine();
-        int int_pos[]=new int[3];
         System.out.println("Enter initial x, y and z co-ordinates");
-        int_pos[0]=s.nextInt();
-        int_pos[1]=s.nextInt();
-        int_pos[2]=s.nextInt();
-        Sample_Code obj=new Sample_Code(int_pos, int_dir);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int c=s.nextInt();
+        position p=new position(a, b, c);
+        Sample_Code obj=new Sample_Code(p, int_dir);
         System.out.println("Enter no.of commands");
         int n=s.nextInt();
         char commands[]=new char[n];
